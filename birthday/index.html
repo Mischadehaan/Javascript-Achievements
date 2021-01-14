@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="dag"></div>
+    <div id="maand"></div>
+    <div id="jaar"></div>
+    <script>
+        function toonDatum(){
+            let date=new Date('2004-03-20')
+            let dag=document.getElementById("dag");
+            dag.innerHTML=date.getDay();
+            let maand=document.getElementById("maand");
+            maand.innerHTML=date.getMonth();
+            let jaar=document.getElementById("jaar");
+            jaar.innerHTML=date.getFullYear();
+
+}
+
+window.addEventListener('DOMContentLoaded', toonDatum);
+    </script>
+    
+</body>
+</html>
