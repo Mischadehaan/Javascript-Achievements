@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <script src="extern.js"></script>
+        <script>
+            alert("DOM jij bent DOM");
+        </script>
+    </head>
+    <body>
+    <h1>Good evening..</h1>    
+    <p id="greet">...</p>
+    <script>
+        document.getElementById('greet').textContent = "Hi i'm DOM not stupid I'm DOM!"
+    </script>
+    <input type="button" value = "clcik here to see me inside" onclick="function inline(){
+        document.getElementById('greet').textContent = 'Thank you for using the DOM inline!';
+    }inline();">
+    </input>
+    <input type="button" value = "click here to see me outside" onclick="clickedMe()"></input>
+    </body>
+</html>
